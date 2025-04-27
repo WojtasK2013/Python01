@@ -9,3 +9,5 @@ for i in range(liczby):
     podana_liczba = int(input('zgadnij liczbę: '))
     if podana_liczba == a:
         print('zgadłeś')
+pass
+print('koniec gry')
