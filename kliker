@@ -1,0 +1,6 @@
+print ("hello")
+print("witam w moim klikerze")
+print("zasady są proste: do każdej ramki wpisujesz słowo kli .eżeli
+gotowość = input('gotowy')
+if gotowy == 'tak
+print ok za
