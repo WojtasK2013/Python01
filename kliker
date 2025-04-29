@@ -1,6 +1,8 @@
 print ("hello")
 print("witam w moim klikerze")
-print("zasady są proste: do każdej ramki wpisujesz słowo kli .eżeli
-gotowość = input('gotowy')
-if gotowy == 'tak
-print ok za
+print("zasady są proste: do każdej ramki wpisujesz słowo o nazwie ,klik' jeżeli napiszesz inne słowo to nie zaliczamy a więc pilnuj się")
+gotowość = input('gotowy: ')
+if gotowość == 'tak' :
+ print("ok zaczynajmy. start!!!")
+for i in range(5)
+import time

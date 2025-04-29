@@ -1,0 +1,1 @@
+odp_kąt =input("ile stopni ma ką który chcesz się dowiedzieć")
