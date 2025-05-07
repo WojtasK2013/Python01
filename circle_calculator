@@ -1,0 +1,8 @@
+promień = float(input("jaki jest promień twojego koła") )
+działanie = input('co chcesz obliczyć(obwód czy pole koła)?')
+if działanie == 'obwód':
+    obk = 2* 3.14 * promień
+    print(f"{działanie} koła wynosi {obk:.2f}")
+if działanie  == "pole":
+    pk = 3.14 * promień * promień
+    print(f"{działanie} koła wynosi {pk:.2f}")
