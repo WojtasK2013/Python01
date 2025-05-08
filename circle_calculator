@@ -6,3 +6,5 @@ if działanie == 'obwód':
 if działanie  == "pole":
     pk = 3.14 * promień * promień
     print(f"{działanie} koła wynosi {pk:.2f}")
+else:
+    print("nie można tego obliczyć")
