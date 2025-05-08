@@ -1,16 +1,18 @@
 print("."*150)
+ilość_pytań = input("ile chcesz pytań?")
 print("uwaga! pierwsze pytanie")
 import random
-pytanie = random.randint(1, 1)
+for i in range(int(ilość_pytań)):
+ pytanie = random.randint(1, 2)
 if pytanie == 1:
-    odp1 = input("jak jest ''biegać,, po angielsku  ")
-if odp1 == 'run':
+    odp = input("jak jest ''biegać,, po angielsku  ")
+if odp == 'run':
     print("dobrze")
 else:
     print("źle")
-elif pytanie == 2:
-    odp_nr2 = input("jak jest ''pływać,, po angielsku  ")
-if odp_nr2 == 'swim':
+if pytanie == 2:
+    odp = input("jak jest ''pływać,, po angielsku  ")
+if odp == 'swim':
     print("dobrze")
 else:
     print("źle")
