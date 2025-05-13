@@ -1,5 +1,5 @@
 print("."*150)
-
+punkty = 0
 ilość_pytań = int(input("ile chcesz pytań?"))
 import random
 for i in range(int(ilość_pytań)):
@@ -10,5 +10,7 @@ for i in range(int(ilość_pytań)):
     odp = input("   ")
     if odp == slowka_ang[p]:
         print("dobrze")
+        punkty =punkty+1
     else:
         print(f"źle, poprawna odpowiedż to ,,{slowka_ang[p]}''")
+print(f"zdobyłeś {punkty} na {ilość_pytań} punktów")
