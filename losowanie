@@ -1,0 +1,3 @@
+import random
+losowa_liczba = random.randint(1, 10)
+print(losowa_liczba)

@@ -4,5 +4,10 @@ print("zasady są proste: do każdej ramki wpisujesz słowo o nazwie ,klik' jeż
 gotowość = input('gotowy: ')
 if gotowość == 'tak' :
  print("ok zaczynajmy. start!!!")
-for i in range(5)
-import time
+def kliki(klik =''):
+       klik = input('pisz teraz')
+       if klik == 'klik':
+for i in range(5):
+    kliki()
+    if  == 'klik':
+    
