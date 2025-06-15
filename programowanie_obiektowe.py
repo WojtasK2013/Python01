@@ -1,3 +1,4 @@
+import random
 class ZwierzakDomowy:
     def __init__(self,ksywka):
         self.ksywka = ksywka
@@ -16,7 +17,7 @@ class Kot(ZwierzakDomowy):
         super().__init__(ksywka)
     def daj_glos(self):
         print("miau miau")
-        def turlaj_się(self):
+    def turlaj_się(self):
             print('kot się turla')
 class Ptaszek(ZwierzakDomowy):
     def __init__(self, ksywka):
@@ -25,7 +26,11 @@ class Ptaszek(ZwierzakDomowy):
         print("ćwir ćwir")
     def turlaj_się(self):
         print ('nie umiem się turlać')
-class Rybka(ZwierzakDomowy)
+    def daj_smaczek(self):
+        print("pies się cieszy")
+
+    
+class Rybka(ZwierzakDomowy):   
     def __init__(self, ksywka):
         super().__init__(ksywka)
     def daj_glos(self):
@@ -34,19 +39,32 @@ class Rybka(ZwierzakDomowy)
         print ('rybka turla się pod wodą')
 pies = Pies("Pimpek","Jamnik")
 ptaszek = Ptaszek('papuga')
-złota_rybka = ZwierzakDomowy('plumek')
+złota_rybka = Rybka('plumek')
 kot = Kot("Mruczek")
-komenda = input('jaka   ma być komęda?')
+komenda = input('jaka   ma być komenda?')
+daj_glos=""
 if komenda == 'daj głos':
-        daj_glos =  input("kto ma dać głos ")
-if daj_glos == 'pies':
-    pies.daj_glos()
-if daj_glos == 'kot':
-    kot.daj_glos()
-if daj_glos == 'ryba':
-    złota_rybka.daj_glos()
-if daj_glos == ptaszek:
-    ptaszek.daj_glos
-if komenda == 'turlaj się':
- turlaj_się = input("kto ma się turlać")
-if turlaj_się == 'pies':
+    daj_glos = input("kto ma dać głos ")
+    if daj_glos == 'pies':
+        pies.daj_glos()
+    elif daj_glos == 'kot':
+        kot.daj_glos()
+    elif daj_glos == 'ryba':
+        złota_rybka.daj_glos()
+    elif daj_glos == 'ptaszek':
+        ptaszek.daj_glos()
+    else:
+        print("Nie mam takiego zwierzaka.")
+elif komenda == 'turlaj się':
+    turlaj_się = input("kto ma się turlać")
+    if turlaj_się == 'pies':
+
+        pies.turlaj_się()
+    elif turlaj_się == 'kot':
+        kot.turlaj_się()
+    elif turlaj_się == 'ryba':
+        złota_rybka.turlaj_się()
+    elif turlaj_się == 'ptaszek':
+        ptaszek.turlaj_się()
+    else:
+        print("Nie mam takiego zwierzaka.")
