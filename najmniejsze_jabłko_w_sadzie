@@ -1,0 +1,20 @@
+import random
+wejście = int(input("ile zebraliśmy dzisiaj jabłek mistrzu"))
+def generuj_tablice(n):
+    pudło = []
+    for i in range(wejście):
+        jabłko = 0
+        jabłko = random.randint(1,100)
+        pudło.append(jabłko)
+    return pudło
+pudło = generuj_tablice(wejście)
+print(pudło)
+
+for poczatek in range(wejście):
+    indeks_naj_el = poczatek # indeks najmniejszego jablka
+    for i in range(poczatek,wejście):
+        if pudło[indeks_naj_el]>pudło[i]:
+            indeks_naj_el = i
+    pudło[poczatek],pudło[indeks_naj_el] = pudło[indeks_naj_el],pudło[poczatek]
+    print(pudło)
+

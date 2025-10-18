@@ -1,0 +1,5 @@
+kod = input("napis")
+
+# Poprawne porównanie:
+print(kod = input("Podaj jeden znak: ")
+print(chr(65))   # wyświetli 'A'

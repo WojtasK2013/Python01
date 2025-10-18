@@ -1,13 +1,17 @@
-print ("hello")
-print("witam w moim klikerze")
-print("zasady są proste: do każdej ramki wpisujesz słowo o nazwie ,klik' jeżeli napiszesz inne słowo to nie zaliczamy a więc pilnuj się")
-gotowość = input('gotowy: ')
-if gotowość == 'tak' :
- print("ok zaczynajmy. start!!!")
-def kliki(klik =''):
-       klik = input('pisz teraz')
-       if klik == 'klik':
-for i in range(5):
-    kliki()
-    if  == 'klik':
-    
+from nicegui import ui,app
+licznik = 0
+def dodaj():
+    try:
+       global licznik
+       licznik += 1
+       wynik = ui.label(f"{licznik}")
+    except ValueError:
+        wynik.text = "Błąd: podaj liczby"
+       
+ui.label("kliker")
+
+wynik = ui.label(f"{licznik}")
+ui.button("Dodaj", on_click=dodaj)
+
+
+ui.run(reload=False)
