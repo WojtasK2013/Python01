@@ -1,0 +1,20 @@
+import random
+wejście = int(input("ile baloników mistrzu"))
+def generuj_tablice(n):
+    pudło = []
+    for i in range(wejście):
+        balon = 0
+        balon = random.randint(1,100)
+        pudło.append(balon)
+    return pudło
+pudło = generuj_tablice(wejście)
+print(pudło)
+def sortuj_bąbelki(pudło):   
+    for i in range(wejście ):
+        pass   
+        for poczatek in range(0,wejście - 1):
+            if pudło[poczatek] > pudło[poczatek + 1]:
+                pudło[poczatek],pudło[poczatek + 1] =pudło[poczatek + 1], pudło[poczatek]
+    return pudło
+sortuj_bąbelki(pudło)
+print(pudło)
