@@ -2,8 +2,7 @@ from nicegui import ui, app
 import json
 def dopisz_do_systemu(linie):
     with open('folder_bankowy/bank.py',encoding="utf-8",mode='w') as plik:
-        linie.append(f' if wyszukaj_konto =={[nowe_konto]}zrób_działanie()')
-    plik.writelines(linie)
+        plik.writelines(linie)
 
 def odczytaj_rachunki():
     with open('folder_bankowy/rachunki_bankowe.json',encoding="utf-8",mode='r') as plik:
